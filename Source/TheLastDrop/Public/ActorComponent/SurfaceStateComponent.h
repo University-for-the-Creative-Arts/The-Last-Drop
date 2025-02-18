@@ -13,10 +13,10 @@ UENUM(BlueprintType)
 enum class EBubbleStates : uint8
 {
 	Default,
-	Electrocuted,
+	Sap,
 	Fire,
 	Oil,
-	Water
+	
 };
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -38,39 +38,29 @@ private:
 	EBubbleStates BubbleStates;
 	//Physics Materials
 	UPROPERTY(EditAnywhere)
-	UPhysicalMaterial* ElectroSurface;
+	UPhysicalMaterial* SapSurface;
 
 	UPROPERTY(EditAnywhere)
 	UPhysicalMaterial* FireSurface;
 
 	UPROPERTY(EditAnywhere)
 	UPhysicalMaterial* OilSurface;
-
-	UPROPERTY(EditAnywhere)
-	UPhysicalMaterial* WaterSurface;
-
+	
 	// Niagara systems for each state
 	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* DefaultNiagaraSystem;
+	UMaterial* DefaultMaterial;
 
 	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* ElectroNiagaraSystem;
+	UMaterial* SapMaterial;
 
 	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* FireNiagaraSystem;
+	UMaterial* FireMaterial;
 
 	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* OilNiagaraSystem;
-
-	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* WaterNiagaraSystem;
-
+	UMaterial* OilMaterial;
 	// Reference to the owning actor's Static Mesh and Niagara components
 	UPROPERTY()
 	UStaticMeshComponent* StaticMeshComponent;
-
-	UPROPERTY()
-	TObjectPtr<UNiagaraComponent> NiagaraComponent;
 
 	//FUNCTIONS
 

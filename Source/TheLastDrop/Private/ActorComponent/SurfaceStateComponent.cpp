@@ -22,18 +22,12 @@ void USurfaceStateComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 	BubbleStates = EBubbleStates::Default;
 	
 	// Find components on the owning actor
 	StaticMeshComponent = GetOwner()->FindComponentByClass<UStaticMeshComponent>();
-	NiagaraComponent = GetOwner()->FindComponentByClass<UNiagaraComponent>();
-
-	// Ensure we have valid references
-	if (!NiagaraComponent)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("SurfaceStateComponent: Missing Static Mesh or Niagara Component on Owner."));
-	}
-
+	
 	UpdateMeshAndNiagara();
 	
 }
@@ -57,36 +51,34 @@ void USurfaceStateComponent::ChangeState(EBubbleStates NewState)
 
 void USurfaceStateComponent::UpdateMeshAndNiagara()
 {
-	if (!StaticMeshComponent || !NiagaraComponent)
+	if (!StaticMeshComponent || !DefaultMaterial)
 	{
 		return;
 	}
 
 	switch (BubbleStates)
 	{
-	case EBubbleStates::Electrocuted:
-		NiagaraComponent->SetAsset(ElectroNiagaraSystem);
+	case EBubbleStates::Default:
+		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
 
 	case EBubbleStates::Fire:
-		NiagaraComponent->SetAsset(FireNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, FireMaterial);
 		break;
 
 	case EBubbleStates::Oil:
-		NiagaraComponent->SetAsset(OilNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, OilMaterial);
 		break;
 
-	case EBubbleStates::Water:
-		NiagaraComponent->SetAsset(WaterNiagaraSystem);
+	case EBubbleStates::Sap:
+		StaticMeshComponent->SetMaterial(0, SapMaterial);;
 		break;
 
 	default:
-		NiagaraComponent->SetAsset(DefaultNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
 	}
 
-	// Activate the Niagara effect
-	NiagaraComponent->Activate();
 }
 
 void USurfaceStateComponent::DetectSurface()
@@ -117,12 +109,12 @@ void USurfaceStateComponent::DetectSurface()
 			TObjectPtr<UPhysicalMaterial> HitMaterial = HitResult.PhysMaterial.Get();
 
 			// Check the material and change state
-			if (HitMaterial == ElectroSurface)
+			if (HitMaterial == SapSurface)
 			{
-				ChangeState(EBubbleStates::Electrocuted);
-				UE_LOG(LogTemp, Warning, TEXT("Electrocuted"));
+				ChangeState(EBubbleStates::Sap);
+				UE_LOG(LogTemp, Warning, TEXT("Sap"));
 			}
-			else if (HitMaterial == FireSurface)
+			else if (HitMaterial == FireSurface && EBubbleStates::Oil == BubbleStates)
 			{
 				ChangeState(EBubbleStates::Fire);
 				UE_LOG(LogTemp, Warning, TEXT("Fire"));
@@ -132,16 +124,7 @@ void USurfaceStateComponent::DetectSurface()
 				ChangeState(EBubbleStates::Oil);
 				UE_LOG(LogTemp, Warning, TEXT("Oil"));
 			}
-			else if (HitMaterial == WaterSurface)
-			{
-				ChangeState(EBubbleStates::Water);
-				UE_LOG(LogTemp, Warning, TEXT("Water"));
-			}
-			else if (HitMaterial == nullptr)
-			{
-				ChangeState(EBubbleStates::Default);
-				UE_LOG(LogTemp, Warning, TEXT("Default"));
-			}
+			
 		}
 		else
 		{
