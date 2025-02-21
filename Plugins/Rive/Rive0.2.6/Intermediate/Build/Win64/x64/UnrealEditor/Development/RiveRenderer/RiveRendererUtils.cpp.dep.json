@@ -1,0 +1,37 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\source\\riverenderer\\private\\riverendererutils.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2308729\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riverenderer\\definitions.riverenderer.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\source\\riverenderer\\public\\riverendererutils.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\texturerendertarget2d.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\texturerendertarget.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\texturerendertarget.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\texturerendertarget2d.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\mediashaders.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\shaderparameterstruct.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphbuilder.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphblackboard.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\generatedtypename.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphevent.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphevent.inl",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphpass.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphparameters.inl",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphtrace.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphvalidation.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\core\\public\\experimental\\containers\\robinhoodhashtable.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphbuilder.inl",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\renderer\\public\\screenpass.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\public\\canvastypes.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\canvastypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\commonrenderresources.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\rendergraphutils.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\renderer\\public\\screenpass.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\source\\riveeditor\\private\\logs\\riveeditorlog.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2308729\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveeditor\\definitions.riveeditor.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive\\rive0.2.6\\source\\riveeditor\\private\\logs\\riveeditorlog.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
