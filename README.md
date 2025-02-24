@@ -1,4 +1,3 @@
-
 ![](../../University-for-the-Creative-Arts/The-Last-Drop/Content/Static/Splash/EdSplash.png)
 # The Last Drop 🫧
 ## Game Description:
