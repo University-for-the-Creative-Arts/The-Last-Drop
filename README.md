@@ -3,7 +3,7 @@
 # The Last Drop 🫧
 
 ## -> [FULL GDD](https://ucreative-my.sharepoint.com/:w:/g/personal/2303759_students_ucreative_ac_uk/EWdnCJxDBGpFlTTFeYRkCXwBfjQiAvb87KjLeBkyAL-Lxg?e=7Tcb3W) <-
-## -> [Technical devlog]() <-
+## -> [Technical devlog](https://github.com/University-for-the-Creative-Arts/The-Last-Drop/blob/main/Content/Static/Splash/Technical%20devlog.md) <-
 ## -> [Scheduling]() <-
 ## Game Description:
 **The Last Drop** is a puzzle platformer where the player controls a character whose head is a bubble which can be detached and then interact with the environment.
