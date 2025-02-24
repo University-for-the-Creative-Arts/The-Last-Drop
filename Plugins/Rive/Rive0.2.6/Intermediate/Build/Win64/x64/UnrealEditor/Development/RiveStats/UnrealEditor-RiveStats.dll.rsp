@@ -36,8 +36,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
-"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\RiveStats.cpp.obj"
-"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\RiveStatsModule.cpp.obj"
+"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Module.RiveStats.cpp.obj"
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\DeveloperSettings\UnrealEditor-DeveloperSettings.lib"

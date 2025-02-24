@@ -40,8 +40,7 @@
 /FUNCTIONPADMIN:6
 /NATVIS:"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\RenderCore\RenderCore.natvis"
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
-"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveShaders\RiveShadersModule.cpp.obj"
-"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveShaders\RiveShaderTypes.cpp.obj"
+"C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveShaders\Module.RiveShaders.cpp.obj"
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveShaders\Default.rc2.res"
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Source\ThirdParty\RiveLibrary\Libraries\Win64\rive_libwebp.lib"
 "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Source\ThirdParty\RiveLibrary\Libraries\Win64\rive_libpng.lib"
