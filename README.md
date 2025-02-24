@@ -1,5 +1,10 @@
-![](../../University-for-the-Creative-Arts/The-Last-Drop/Content/Static/Splash/EdSplash.png)
+![](https://t9015582619.p.clickup-attachments.com/t9015582619/0a64fd7f-b4c7-44cc-b2b7-4dae58271c5b/EdSplash%20copy.png)
+=======
 # The Last Drop 🫧
+
+## -> [FULL GDD](https://ucreative-my.sharepoint.com/:w:/g/personal/2303759_students_ucreative_ac_uk/EWdnCJxDBGpFlTTFeYRkCXwBfjQiAvb87KjLeBkyAL-Lxg?e=7Tcb3W) <-
+## -> [Technical devlog]() <-
+## -> [Scheduling]() <-
 ## Game Description:
 **The Last Drop** is a puzzle platformer where the player controls a character whose head is a bubble which can be detached and then interact with the environment.
 ### Game Setting:
@@ -23,77 +28,47 @@ The chambers focus on extreme heat, sub-zero temperatures, puzzles and hazards, 
 
 ### -> [FIGMA LINK](https://www.figma.com/board/UZr5MHNYnskegFjR7MEpn0/Master-design-document?node-id=0-1&p=f) <-
 
-### Bubble pickup effects ❇️
+#### Level Overview: 
+There will be 3 parts of the Autumn level: **Normal, Rainy and Stormy**. 
+*Each part will have different mechanics that the player uses. In the normal area, the player needs to pick up leaves on the way to move to or access another area.*
+### CORE Mechanics: ❗️
+- **Level 1** *SAP liquid*
+
+A sap will be dripping from a pipe *(somewhere in the level)* bubble can pick up the sap and when player bursts the sap in will spray the sap on the floor and create a jumping plafrom. 
+
+**Generic jump velocity z = 700;
+Sap boost jump velocity z = 1300;**
+
+The player will only have a boost in the jamp when they in direct contact with a sap. 
+
+- **Level 2** *Wind (ON HOLD)*
+- **Level 3** *Frozen bubble*
+
+The bubble becomes an "ice ball" when it comes within a certain distance to a freezer. *(This will be conveyed to the player through visial cues to the player)*
+
+If the bubble flies near a freezer it will turn into ice and follow the movement mechanics outlined in the next section. The inverse would happen if the ice ball went near a heater, it would melt back into the normal bubble.
+
+If the body with the bubble attached and the player goes near a freezer, it will become the ice ball, and the player is able to throw it with the LMB (see description in relevant section). Like the lone ice ball, if the body with the ice ball goes near a heater the ball will melt and become the bubble again, returning to normal movement.
+- **Level 4** *Oil Bubble* 
+
+The mechanic is that the bubble can pick up oil and set of fire if it within the heat/flames that are around the level. Player will be able to burn plants and some level pieces with the fireball. 
+
+### Side Mechanics:
+
+#### Bubble pickup effects ❇️
 The bubble will be able to pick up various effects which will change the appearance of the bubble. For example, going into a pool of oil will give the bubble a oily sheen and have bubbles of oil floating inside of it. The bubble essentially acts as a container for something which will change the behaviour of the bubble, once whatever is in the bubble is released it will affect certain things in the environment.
 
 Depending on the effect it will have a timer on how long it will stay inside of the bubble before it dissipates and returns to the “normal” bubble state.
 If the bubble has an effect and the bubble pops the effect will be lost on the new bubble that spawns on the player's body. As with the current mechanic of the bubble’s pop disrupting electronics, the pop will drop whatever is held inside of the bubble.
 
-### Autumn Level 🧿
-#### Level Overview: 
-There will be 3 parts of the Autumn level: **Normal, Rainy and Stormy**. 
-*Each part will have different mechanics that the player uses. In the normal area, the player needs to pick up leaves on the way to move to or access another area.*
-- In the rainy area there will be mist that the player can grab with their bubble head and use it to spray water onto enemies in the level. 
+#### Size up ⬆️ 
+This mechanic is a ‘Size up’ mechanic, the players bubble grows which can be used to effect multiple triggers as once. This mechanic represents the growth that comes with springtime on animals, nature.
 
-Finally in the stormy area there will be lightning that the player can absorb with their bubble head to use on electronics to power them up to access a new area. It will start nicely and slowly in the beautiful warm autumn and as the player progresses and walks forward, the harsher and rainier the weather gets. It coincides with new mechanics and aspects being introduced as the weather changes.
-### Mechanics:
-- **The player can use the drops from the water bubble to manipulate water to progress through the level by filling up water tanks, growing foliage and vines in the spring level.**
-![](https://t9015582619.p.clickup-attachments.com/t9015582619/682a6801-7d79-4973-a78f-d9869a6bc83a/image.png)
+#### Cogs ⚙️ 
+Cogs are spinning platforms, designed to add a little bit of challenge to a platforming segment. They continually rotate with each other. They only rotate, staying completely stationary.
 
+#### Molten Metal ♨️
+Pools of molten metal that act as essentially lava. If the player touches it, they die. If an oil-filled bubble touches it, it ignites. To put simply, it’s a kill plain that acts as a fire source.
 
-
-Water Dripping Mechanic	4
-Electric Charge Mechanic:	4
-Winter Level	5
-Moodboards:	6
-Ice ball Mechanics:	6
-Freezing/Melting:	7
-Ice Ball Movement:	7
-Throwing the ball:	8
-Picking up the ball:	8
-Body movement:	8
-Puzzle examples:	8
-Spring Level	9
-Mechanics:	11
-Size up:	12
-Rasing Platforms:	12
-Sunlight mirror puzzle	13
-Light Platforms:	14
-Sap mechanics:	14
-Sap weakness (Removing the effect)	15
-Sap Bouncing mechanic	16
-Sap pick-up items and stick	16
-Summer Level	17
-Theming	17
-Moodboards	18
-Mechanics	19
-Oil	19
-Fireball	19
-Torches	19
-Fire Extinguisher	19
-Heat Rooms	19
-Switches	19
-Heavy Machinery	19
-Pistons	19
-Flaming Pipes	19
-Cogs	19
-Molten Metal	19
-Visual Effects	19
-Level Layouts	19
-Starting Room	19
-Additional Mechanics for other levels	19
-Enemies	19
-Spike Shooter	19
-Moving Bomb	19
-Bubble Chaser	19
-Narrative	19
-Level 1 – Autumn Mist - The Lost Way Back (Autumn)	19
-Level 2 – The Silence of Winter - The Frozen World (Winter)	19
-Level 3 – The Sprouting of Spring - The Stampede of Life (Spring)	19
-Level 4 – Summer Blaze - Trial of the Blazing Sun (Summer)	19
-Audio List	19
-Contents	19
-User Experience	19
-Gameplay	19
-Levelz	19
-
+#### Bubble Chaser 
+This enemy will begin to move when the player removes the bubble from their body, floating towards the bubble to pop it. It deactivates whenever the player’s bubble is attached to them, like with the Spike Shooter, or once the player has finished the puzzle in the room it’s in.
