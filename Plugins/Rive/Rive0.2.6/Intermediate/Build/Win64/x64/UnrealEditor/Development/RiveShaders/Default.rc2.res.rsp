@@ -81,6 +81,6 @@
 /DPROJECT_COMPANY_NAME="UCA Faculty Team"
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="The Last Drop"
-/DPROJECT_PRODUCT_IDENTIFIER=TheLastDrop.uproject
+/DPROJECT_PRODUCT_IDENTIFIER=TheLastDrop
 /fo "C:\Users\2308729\Documents\GitHub\The-Last-Drop\Plugins\Rive\Rive0.2.6\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveShaders\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

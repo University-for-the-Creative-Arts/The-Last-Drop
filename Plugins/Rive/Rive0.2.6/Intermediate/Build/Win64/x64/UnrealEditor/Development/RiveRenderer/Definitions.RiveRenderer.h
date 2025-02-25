@@ -10,7 +10,7 @@
 #define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_2 0
 #define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_3 1
 #define UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_5_4 1
-#define UE_PROJECT_NAME TheLastDrop.uproject
+#define UE_PROJECT_NAME TheLastDrop
 #define UE_TARGET_NAME TheLastDropEditor
 #define UE_MODULE_NAME "RiveRenderer"
 #define UE_PLUGIN_NAME "Rive"
