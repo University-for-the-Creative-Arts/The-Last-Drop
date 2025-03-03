@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.RiveStats.cpp.obj": [
-			"RiveStats.cpp.obj",
-			"RiveStatsModule.cpp.obj"
-		]
-	}
-}

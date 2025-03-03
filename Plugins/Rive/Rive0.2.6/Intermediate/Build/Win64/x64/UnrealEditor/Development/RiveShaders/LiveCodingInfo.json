@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.RiveShaders.cpp.obj": [
-			"RiveShadersModule.cpp.obj",
-			"RiveShaderTypes.cpp.obj"
-		]
-	}
-}
