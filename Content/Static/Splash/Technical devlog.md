@@ -1,4 +1,3 @@
-![](https://t9015582619.p.clickup-attachments.com/t9015582619/0a64fd7f-b4c7-44cc-b2b7-4dae58271c5b/EdSplash%20copy.png)
-=======
-# The Last Drop
-## Technical development 
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae3b1d2f273a23f719b5b6583e226256c4af98993d90fbb8214d443280060138
+size 1287
