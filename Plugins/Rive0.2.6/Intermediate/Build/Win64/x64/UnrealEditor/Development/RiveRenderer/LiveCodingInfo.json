@@ -2,10 +2,6 @@
 	"RemapUnityFiles": 
 	{
 		"Module.RiveRenderer.cpp.obj": [
-			"RiveRenderCommand.gen.cpp.obj",
-			"RiveRenderer.init.gen.cpp.obj",
-			"RiveRendererSettings.gen.cpp.obj",
-			"RiveTypes.gen.cpp.obj",
 			"RiveRendererLog.cpp.obj",
 			"RenderContextRHIImpl.cpp.obj",
 			"RiveRendererD3D11.cpp.obj",
@@ -22,7 +18,11 @@
 			"RiveRendererModule.cpp.obj",
 			"RiveRendererSettings.cpp.obj",
 			"RiveRendererUtils.cpp.obj",
-			"RiveRenderTarget.cpp.obj"
+			"RiveRenderTarget.cpp.obj",
+			"RiveRenderCommand.gen.cpp.obj",
+			"RiveRenderer.init.gen.cpp.obj",
+			"RiveRendererSettings.gen.cpp.obj",
+			"RiveTypes.gen.cpp.obj"
 		]
 	}
 }

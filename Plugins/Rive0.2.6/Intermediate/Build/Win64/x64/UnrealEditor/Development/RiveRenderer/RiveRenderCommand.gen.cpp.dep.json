@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\unrealeditor\\inc\\riverenderer\\uht\\riverendercommand.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2308729\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riverenderer\\definitions.riverenderer.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\riverenderer\\public\\riverendercommand.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\riverenderer\\public\\rivetypes.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\unrealeditor\\inc\\riverenderer\\uht\\rivetypes.generated.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\thirdparty\\rivelibrary\\includes\\rive\\math\\mat2d.hpp",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\thirdparty\\rivelibrary\\includes\\rive\\math\\aabb.hpp",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\thirdparty\\rivelibrary\\includes\\rive\\span.hpp",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\thirdparty\\rivelibrary\\includes\\rive\\rive_types.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\memory",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\cassert",
+            "c:\\program files (x86)\\windows kits\\10\\include\\10.0.22621.0\\ucrt\\assert.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\thirdparty\\rivelibrary\\includes\\rive\\math\\vec2d.hpp",
+            "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\array",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\unrealeditor\\inc\\riverenderer\\uht\\riverendercommand.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
