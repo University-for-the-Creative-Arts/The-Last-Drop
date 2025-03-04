@@ -2,6 +2,21 @@
 	"RemapUnityFiles": 
 	{
 		"Module.Rive.cpp.obj": [
+			"Rive.init.gen.cpp.obj",
+			"RiveActorComponent.gen.cpp.obj",
+			"RiveArtboard.gen.cpp.obj",
+			"RiveAsset.gen.cpp.obj",
+			"RiveAudioAsset.gen.cpp.obj",
+			"RiveAudioEngine.gen.cpp.obj",
+			"RiveDescriptor.gen.cpp.obj",
+			"RiveEvent.gen.cpp.obj",
+			"RiveFile.gen.cpp.obj",
+			"RiveFontAsset.gen.cpp.obj",
+			"RiveImageAsset.gen.cpp.obj",
+			"RiveTexture.gen.cpp.obj",
+			"RiveTextureObject.gen.cpp.obj",
+			"RiveWidget.gen.cpp.obj",
+			"RiveWidgetActor.gen.cpp.obj",
 			"RiveActorComponent.cpp.obj",
 			"RiveWidgetActor.cpp.obj",
 			"RiveLog.cpp.obj",
@@ -23,22 +38,7 @@
 			"RiveTextureResource.cpp.obj",
 			"SRiveWidget.cpp.obj",
 			"RiveStats.cpp.obj",
-			"RiveWidget.cpp.obj",
-			"Rive.init.gen.cpp.obj",
-			"RiveActorComponent.gen.cpp.obj",
-			"RiveArtboard.gen.cpp.obj",
-			"RiveAsset.gen.cpp.obj",
-			"RiveAudioAsset.gen.cpp.obj",
-			"RiveAudioEngine.gen.cpp.obj",
-			"RiveDescriptor.gen.cpp.obj",
-			"RiveEvent.gen.cpp.obj",
-			"RiveFile.gen.cpp.obj",
-			"RiveFontAsset.gen.cpp.obj",
-			"RiveImageAsset.gen.cpp.obj",
-			"RiveTexture.gen.cpp.obj",
-			"RiveTextureObject.gen.cpp.obj",
-			"RiveWidget.gen.cpp.obj",
-			"RiveWidgetActor.gen.cpp.obj"
+			"RiveWidget.cpp.obj"
 		]
 	}
 }
