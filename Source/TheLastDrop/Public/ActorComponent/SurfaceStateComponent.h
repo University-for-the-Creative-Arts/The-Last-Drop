@@ -19,7 +19,7 @@ enum class EBubbleStates : uint8
 	Flammable UMETA(DisplayName = "Flammable"),
 };
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class THELASTDROP_API USurfaceStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
