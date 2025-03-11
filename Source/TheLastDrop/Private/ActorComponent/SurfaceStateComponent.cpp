@@ -74,14 +74,6 @@ void USurfaceStateComponent::UpdateMeshAndNiagara()
 		StaticMeshComponent->SetMaterial(0, SapMaterial);;
 		break;
 
-	case EBubbleStates::Water:
-		StaticMeshComponent->SetMaterial(0, WaterMaterial);;
-		if (WaterSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, WaterSound, GetOwner()->GetActorLocation());
-		}
-		break;
-
 	default:
 		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
@@ -121,10 +113,6 @@ void USurfaceStateComponent::DetectSurface()
 			{
 				ChangeState(EBubbleStates::Sap);
 				UE_LOG(LogTemp, Warning, TEXT("Sap"));
-			}
-			else if (HitMaterial == WaterSurface)
-			{
-				ChangeState(EBubbleStates::Water);
 			}
 			else if (HitMaterial == FireSurface && EBubbleStates::Oil == BubbleStates)
 			{
