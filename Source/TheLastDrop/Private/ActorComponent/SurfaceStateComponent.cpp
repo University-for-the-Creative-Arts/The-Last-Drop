@@ -8,6 +8,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/Actor.h"
+#include "Kismet/GameplayStatics.h"
 
 
 USurfaceStateComponent::USurfaceStateComponent()
@@ -22,18 +23,12 @@ void USurfaceStateComponent::BeginPlay()
 {
 	Super::BeginPlay();
 
+	
 	BubbleStates = EBubbleStates::Default;
 	
 	// Find components on the owning actor
 	StaticMeshComponent = GetOwner()->FindComponentByClass<UStaticMeshComponent>();
-	NiagaraComponent = GetOwner()->FindComponentByClass<UNiagaraComponent>();
-
-	// Ensure we have valid references
-	if (!NiagaraComponent)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("SurfaceStateComponent: Missing Static Mesh or Niagara Component on Owner."));
-	}
-
+	
 	UpdateMeshAndNiagara();
 	
 }
@@ -57,36 +52,47 @@ void USurfaceStateComponent::ChangeState(EBubbleStates NewState)
 
 void USurfaceStateComponent::UpdateMeshAndNiagara()
 {
-	if (!StaticMeshComponent || !NiagaraComponent)
+	if (!StaticMeshComponent || !DefaultMaterial)
 	{
 		return;
 	}
 
 	switch (BubbleStates)
 	{
-	case EBubbleStates::Electrocuted:
-		NiagaraComponent->SetAsset(ElectroNiagaraSystem);
+	case EBubbleStates::Default:
+		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
 
 	case EBubbleStates::Fire:
-		NiagaraComponent->SetAsset(FireNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, FireMaterial);
+		// Play Fire Sound at Actor's Location
+		if (FireSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetOwner()->GetActorLocation());
+		}
 		break;
 
 	case EBubbleStates::Oil:
-		NiagaraComponent->SetAsset(OilNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, OilMaterial);
+		if (FireSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, OilSound, GetOwner()->GetActorLocation());
+		}
 		break;
 
-	case EBubbleStates::Water:
-		NiagaraComponent->SetAsset(WaterNiagaraSystem);
+	case EBubbleStates::Sap:
+		StaticMeshComponent->SetMaterial(0, SapMaterial);;
+		if (FireSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, SapSound, GetOwner()->GetActorLocation());
+		}
 		break;
 
 	default:
-		NiagaraComponent->SetAsset(DefaultNiagaraSystem);
+		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
 	}
 
-	// Activate the Niagara effect
-	NiagaraComponent->Activate();
 }
 
 void USurfaceStateComponent::DetectSurface()
@@ -103,12 +109,12 @@ void USurfaceStateComponent::DetectSurface()
 	FVector BubbleLocation = Capsule->GetComponentLocation() - FVector(0, 0, Capsule->GetScaledCapsuleHalfHeight());
 	float SphereRadious = 50.f;
 
-	DrawDebugSphere(GetWorld(), BubbleLocation, SphereRadious, 12, FColor::Blue, false, 1.0f, 0, 2.0f);
+	//DrawDebugSphere(GetWorld(), BubbleLocation, SphereRadious, 12, FColor::Blue, false, 1.0f, 0, 2.0f);
 	FHitResult HitResult;
 	FCollisionQueryParams TraceParams(FName(TEXT("SurfaceTrace")), true, GetOwner());
-
+	TraceParams.bReturnPhysicalMaterial = true;
 	TraceParams.AddIgnoredActor(GetOwner());
-
+#
 	// Perform a line trace
 	if (GetWorld()->SweepSingleByChannel(HitResult, BubbleLocation, BubbleLocation, FQuat::Identity,ECC_Visibility,FCollisionShape::MakeSphere(SphereRadious), TraceParams))
 	{
@@ -116,38 +122,33 @@ void USurfaceStateComponent::DetectSurface()
 		{
 			TObjectPtr<UPhysicalMaterial> HitMaterial = HitResult.PhysMaterial.Get();
 
+			AActor* HitActor = HitResult.GetActor();
+			
 			// Check the material and change state
-			if (HitMaterial == ElectroSurface)
+			if (HitMaterial == SapSurface)
 			{
-				ChangeState(EBubbleStates::Electrocuted);
-				UE_LOG(LogTemp, Warning, TEXT("Electrocuted"));
+				ChangeState(EBubbleStates::Sap);
+				UE_LOG(LogTemp, Warning, TEXT("Sap"));
 			}
-			else if (HitMaterial == FireSurface)
+			else if (HitMaterial == FireSurface && EBubbleStates::Oil == BubbleStates)
 			{
 				ChangeState(EBubbleStates::Fire);
 				UE_LOG(LogTemp, Warning, TEXT("Fire"));
 			}
-			else if (HitMaterial == OilSurface)
+			else if (HitMaterial == OilSurface && BubbleStates != EBubbleStates::Fire)
 			{
 				ChangeState(EBubbleStates::Oil);
 				UE_LOG(LogTemp, Warning, TEXT("Oil"));
 			}
-			else if (HitMaterial == WaterSurface)
+
+			if (!HitActor) return;
+			if (BubbleStates == EBubbleStates::Fire && HitMaterial == FlammableSurface)
 			{
-				ChangeState(EBubbleStates::Water);
-				UE_LOG(LogTemp, Warning, TEXT("Water"));
-			}
-			else if (HitMaterial == nullptr)
-			{
-				ChangeState(EBubbleStates::Default);
-				UE_LOG(LogTemp, Warning, TEXT("Default"));
+				UE_LOG(LogTemp, Warning, TEXT("Flammable object hit! Destroying..."));
+				HitActor->Destroy();
 			}
 		}
-		else
-		{
-			UE_LOG(LogTemp, Warning, TEXT("Line trace did not hit any surface."));
-			ChangeState(EBubbleStates::Fire);
-		}
+	
 
 	}
 }
