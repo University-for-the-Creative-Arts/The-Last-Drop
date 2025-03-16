@@ -12,14 +12,15 @@ class UNiagaraComponent;
 UENUM(BlueprintType)
 enum class EBubbleStates : uint8
 {
-	Default,
-	Sap,
-	Fire,
-	Oil,
-	
+	Default UMETA(DisplayName = "Default"),
+	Sap UMETA(DisplayName = "Sap"),
+	Fire UMETA(DisplayName = "Fire"),
+	Oil UMETA(DisplayName = "Oil"),
+	Flammable UMETA(DisplayName = "Flammable"),
+	Water UMETA(DisplayName = "Water"),
 };
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class THELASTDROP_API USurfaceStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
@@ -34,7 +35,7 @@ protected:
 	virtual void BeginPlay() override;
 private:
 	// PROPERTIES
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, Category = "Surface States", meta = (AllowPrivateAccess = "true"))
 	EBubbleStates BubbleStates;
 	//Physics Materials
 	UPROPERTY(EditAnywhere)
@@ -45,6 +46,12 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UPhysicalMaterial* OilSurface;
+
+	UPROPERTY(EditAnywhere)
+	UPhysicalMaterial* FlammableSurface;
+
+	UPROPERTY(EditAnywhere)
+	UPhysicalMaterial* WaterSurface;
 	
 	// Niagara systems for each state
 	UPROPERTY(EditAnywhere)
@@ -57,10 +64,25 @@ private:
 	UMaterial* FireMaterial;
 
 	UPROPERTY(EditAnywhere)
+	UMaterial* WaterMaterial;
+
+	UPROPERTY(EditAnywhere)
 	UMaterial* OilMaterial;
 	// Reference to the owning actor's Static Mesh and Niagara components
 	UPROPERTY()
 	UStaticMeshComponent* StaticMeshComponent;
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* FireSound;
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* SapSound;
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* OilSound;
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* WaterSound;
 
 	//FUNCTIONS
 
