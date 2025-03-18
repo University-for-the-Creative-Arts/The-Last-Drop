@@ -25,14 +25,21 @@ class THELASTDROP_API USurfaceStateComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	
 	USurfaceStateComponent();
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	UFUNCTION(BlueprintCallable)
+	void DetectSurface();
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void RunBlueprintCodeAfterCPlusPlus();
+	
 private:
 	// PROPERTIES
 	UPROPERTY(BlueprintReadWrite, Category = "Surface States", meta = (AllowPrivateAccess = "true"))
@@ -90,7 +97,6 @@ private:
 
 	void UpdateMeshAndNiagara();
 
-	void DetectSurface();
 
 
 		

@@ -160,7 +160,9 @@ void USurfaceStateComponent::DetectSurface()
 				HitActor->Destroy();
 			}
 		}
-	
 
+
+	RunBlueprintCodeAfterCPlusPlus();	
+		
 	}
 }
