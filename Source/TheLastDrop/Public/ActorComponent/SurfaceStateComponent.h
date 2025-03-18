@@ -92,6 +92,9 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Sound")
 	USoundBase* WaterSound;
 
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* IceSound;
+
 	//FUNCTIONS
 
 	void ChangeState(EBubbleStates NewState);

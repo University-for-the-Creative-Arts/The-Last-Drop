@@ -95,7 +95,13 @@ void USurfaceStateComponent::UpdateMeshAndNiagara()
 			UGameplayStatics::PlaySoundAtLocation(this, WaterSound, GetOwner()->GetActorLocation());
 		}
 		break;
-
+	case EBubbleStates::Ice:
+		StaticMeshComponent->SetMaterial(0, IceMaterial);;
+		if (IceSound)
+		{
+			UGameplayStatics::PlaySoundAtLocation(this, WaterSound, GetOwner()->GetActorLocation());
+		}
+		break;
 	default:
 		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
@@ -133,32 +139,17 @@ void USurfaceStateComponent::DetectSurface()
 			AActor* HitActor = HitResult.GetActor();
 		 
 
-		if (HitMaterial == IceSurface)
-        {
-            // Enable physics simulation
-            UPrimitiveComponent* HitComponent = Cast<UPrimitiveComponent>(HitActor->GetRootComponent());
-            if (HitComponent)
-            {
-                // Ensure the actor simulates physics
-                HitComponent->SetSimulatePhysics(true);
-
-                // Lock the X position by constraining the movement along the X axis
-                HitComponent->SetConstraintMode(EDOFMode::XZPlane); // Constrain the movement to only the Y and Z axes
-                UE_LOG(LogTemp, Warning, TEXT("Freezer hit! Locking X position."));
-            }
-        }
-
-			
 			// Check the material and change state
 			if (HitMaterial == SapSurface)
 			{
 				ChangeState(EBubbleStates::Sap);
 				UE_LOG(LogTemp, Warning, TEXT("Sap"));
 			}
-			else if(HitMaterial == IceSurface)
+			else if (HitMaterial == IceSurface)
 			{
-					ChangeState(EBubbleStates::Ice);
-
+				ChangeState(EBubbleStates::Ice);
+			}
+			
 			else if (HitMaterial == WaterSurface)
 			{
 				ChangeState(EBubbleStates::Water);
