@@ -131,6 +131,23 @@ void USurfaceStateComponent::DetectSurface()
 			TObjectPtr<UPhysicalMaterial> HitMaterial = HitResult.PhysMaterial.Get();
 
 			AActor* HitActor = HitResult.GetActor();
+		 
+
+		if (HitMaterial == IceSurface)
+        {
+            // Enable physics simulation
+            UPrimitiveComponent* HitComponent = Cast<UPrimitiveComponent>(HitActor->GetRootComponent());
+            if (HitComponent)
+            {
+                // Ensure the actor simulates physics
+                HitComponent->SetSimulatePhysics(true);
+
+                // Lock the X position by constraining the movement along the X axis
+                HitComponent->SetConstraintMode(EDOFMode::XZPlane); // Constrain the movement to only the Y and Z axes
+                UE_LOG(LogTemp, Warning, TEXT("Freezer hit! Locking X position."));
+            }
+        }
+
 			
 			// Check the material and change state
 			if (HitMaterial == SapSurface)
@@ -138,6 +155,10 @@ void USurfaceStateComponent::DetectSurface()
 				ChangeState(EBubbleStates::Sap);
 				UE_LOG(LogTemp, Warning, TEXT("Sap"));
 			}
+			else if(HitMaterial == IceSurface)
+			{
+					ChangeState(EBubbleStates::Ice);
+
 			else if (HitMaterial == WaterSurface)
 			{
 				ChangeState(EBubbleStates::Water);
