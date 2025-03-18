@@ -1,0 +1,17 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\unrealeditor\\inc\\riveeditor\\uht\\assetdefinition_rivefile.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2308729\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveeditor\\definitions.riveeditor.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\source\\riveeditor\\private\\assetdefinition_rivefile.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\editor\\unrealed\\public\\assetdefinitiondefault.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\assetdefinitiondefault.generated.h",
+            "c:\\users\\2308729\\documents\\github\\the-last-drop\\plugins\\rive0.2.6\\intermediate\\build\\win64\\unrealeditor\\inc\\riveeditor\\uht\\assetdefinition_rivefile.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
