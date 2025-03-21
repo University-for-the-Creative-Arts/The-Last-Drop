@@ -18,6 +18,7 @@ enum class EBubbleStates : uint8
 	Oil UMETA(DisplayName = "Oil"),
 	Flammable UMETA(DisplayName = "Flammable"),
 	Water UMETA(DisplayName = "Water"),
+	Ice UMETA(DisplayName = "Ice"),
 };
 
 UCLASS(Blueprintable, ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -52,6 +53,10 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UPhysicalMaterial* WaterSurface;
+
+	UPROPERTY(EditAnywhere)
+	UPhysicalMaterial* IceSurface;
+
 	
 	// Niagara systems for each state
 	UPROPERTY(EditAnywhere)
@@ -68,6 +73,9 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UMaterial* OilMaterial;
+
+	UPROPERTY(EditAnywhere)
+    UMaterial* IceMaterial;
 	// Reference to the owning actor's Static Mesh and Niagara components
 	UPROPERTY()
 	UStaticMeshComponent* StaticMeshComponent;
@@ -83,6 +91,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Sound")
 	USoundBase* WaterSound;
+
+	UPROPERTY(EditAnywhere, Category = "Sound")
+	USoundBase* IceSound;
 
 	//FUNCTIONS
 
