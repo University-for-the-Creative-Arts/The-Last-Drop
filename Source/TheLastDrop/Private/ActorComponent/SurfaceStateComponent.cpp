@@ -95,13 +95,7 @@ void USurfaceStateComponent::UpdateMeshAndNiagara()
 			UGameplayStatics::PlaySoundAtLocation(this, WaterSound, GetOwner()->GetActorLocation());
 		}
 		break;
-	case EBubbleStates::Ice:
-		StaticMeshComponent->SetMaterial(0, IceMaterial);;
-		if (IceSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, WaterSound, GetOwner()->GetActorLocation());
-		}
-		break;
+
 	default:
 		StaticMeshComponent->SetMaterial(0, DefaultMaterial);
 		break;
@@ -137,19 +131,13 @@ void USurfaceStateComponent::DetectSurface()
 			TObjectPtr<UPhysicalMaterial> HitMaterial = HitResult.PhysMaterial.Get();
 
 			AActor* HitActor = HitResult.GetActor();
-		 
-
+			
 			// Check the material and change state
 			if (HitMaterial == SapSurface)
 			{
 				ChangeState(EBubbleStates::Sap);
 				UE_LOG(LogTemp, Warning, TEXT("Sap"));
 			}
-			else if (HitMaterial == IceSurface)
-			{
-				ChangeState(EBubbleStates::Ice);
-			}
-			
 			else if (HitMaterial == WaterSurface)
 			{
 				ChangeState(EBubbleStates::Water);
