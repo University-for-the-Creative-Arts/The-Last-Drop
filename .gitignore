@@ -24,7 +24,6 @@
 *.la
 *.a
 
-
 # Executables
 *.exe
 *.out
@@ -70,6 +69,7 @@ Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Content/Static/Splash/Technical devlog.md
 
-# Not Ignore the Plugins File
+# Not Ignore the Plugins file
 !Plugins/
