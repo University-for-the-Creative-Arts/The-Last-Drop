@@ -137,20 +137,24 @@ void USurfaceStateComponent::DetectSurface()
 			{
 				ChangeState(EBubbleStates::Sap);
 				UE_LOG(LogTemp, Warning, TEXT("Sap"));
+
 			}
 			else if (HitMaterial == WaterSurface)
 			{
 				ChangeState(EBubbleStates::Water);
+
 			}
 			else if (HitMaterial == FireSurface && EBubbleStates::Oil == BubbleStates)
 			{
 				ChangeState(EBubbleStates::Fire);
 				UE_LOG(LogTemp, Warning, TEXT("Fire"));
+
 			}
 			else if (HitMaterial == OilSurface && BubbleStates != EBubbleStates::Fire)
 			{
 				ChangeState(EBubbleStates::Oil);
 				UE_LOG(LogTemp, Warning, TEXT("Oil"));
+
 			}
 
 			if (!HitActor) return;
@@ -162,7 +166,6 @@ void USurfaceStateComponent::DetectSurface()
 		}
 
 
-	RunBlueprintCodeAfterCPlusPlus();	
 		
 	}
 }
