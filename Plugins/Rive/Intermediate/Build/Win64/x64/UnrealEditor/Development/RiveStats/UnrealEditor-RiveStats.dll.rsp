@@ -35,9 +35,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
-"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Module.RiveStats.cpp.obj"
-"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Default.rc2.res"
+"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Module.RiveStats.cpp.obj"
+"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\DeveloperSettings\UnrealEditor-DeveloperSettings.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
@@ -68,7 +68,7 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Plugins\Rive\Binaries\Win64\UnrealEditor-RiveStats.dll"
-/IMPLIB:"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\UnrealEditor-RiveStats.sup.lib"
-/PDB:"C:\Users\2309455\Documents\GitHub\The-Last-Drop\Plugins\Rive\Binaries\Win64\UnrealEditor-RiveStats.pdb"
+/OUT:"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Plugins\Rive\Binaries\Win64\UnrealEditor-RiveStats.dll"
+/IMPLIB:"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveStats\UnrealEditor-RiveStats.sup.lib"
+/PDB:"C:\Users\2308729.UCREATIVE\Documents\GitHub\The-Last-Drop\Plugins\Rive\Binaries\Win64\UnrealEditor-RiveStats.pdb"
 /ignore:4078
