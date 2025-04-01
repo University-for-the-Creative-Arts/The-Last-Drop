@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define RIVERENDERER_RiveRenderCommand_generated_h
 
-#define FID_Users_2302143_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveRenderCommand_h_34_GENERATED_BODY \
+#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveRenderCommand_h_34_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRiveRenderCommand_Statics; \
 	RIVERENDERER_API static class UScriptStruct* StaticStruct();
 
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> RIVERENDERER_API UScriptStruct* StaticStruct<struct FRiveRenderCommand>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2302143_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveRenderCommand_h
+#define CURRENT_FILE_ID FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveRenderCommand_h
 
 
 #define FOREACH_ENUM_ERIVERENDERCOMMANDTYPE(op) \
