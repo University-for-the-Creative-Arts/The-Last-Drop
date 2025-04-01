@@ -1,0 +1,11 @@
+{
+	"BuildId": "33043543",
+	"Modules": 
+	{
+		"Rive": "UnrealEditor-Rive.dll",
+		"RiveEditor": "UnrealEditor-RiveEditor.dll",
+		"RiveRenderer": "UnrealEditor-RiveRenderer.dll",
+		"RiveShaders": "UnrealEditor-RiveShaders.dll",
+		"RiveStats": "UnrealEditor-RiveStats.dll"
+	}
+}
