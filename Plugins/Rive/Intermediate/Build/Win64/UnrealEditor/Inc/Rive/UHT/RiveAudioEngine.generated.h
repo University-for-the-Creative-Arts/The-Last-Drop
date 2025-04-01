@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define RIVE_RiveAudioEngine_generated_h
 
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesURiveAudioEngine(); \
 	friend struct Z_Construct_UClass_URiveAudioEngine_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(URiveAudioEngine)
 
 
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API URiveAudioEngine(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~URiveAudioEngine();
 
 
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_16_PROLOG
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_GENERATED_BODY \
+#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_16_PROLOG
+#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_INCLASS_NO_PURE_DECLS \
-	FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_ENHANCED_CONSTRUCTORS \
+	FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -50,7 +50,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> RIVE_API UClass* StaticClass<class URiveAudioEngine>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h
+#define CURRENT_FILE_ID FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveAudioEngine_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

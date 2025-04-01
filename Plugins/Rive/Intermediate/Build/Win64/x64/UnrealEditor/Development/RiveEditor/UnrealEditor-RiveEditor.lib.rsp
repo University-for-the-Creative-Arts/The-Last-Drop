@@ -6,7 +6,13 @@
 /NAME:"UnrealEditor-RiveEditor.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\2318999\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
-"C:\Users\2318999\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\Module.RiveEditor.cpp.obj"
-"C:\Users\2318999\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\Default.rc2.res"
-/OUT:"C:\Users\2318999\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\UnrealEditor-RiveEditor.lib"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\Module.RiveEditor.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\AssetDefinition_RiveFile.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\RiveActorFactory.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\RiveEditor.init.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\RiveFileFactory.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\RiveFileThumbnailRenderer.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\RiveTextureObjectThumbnailRenderer.gen.cpp.obj"
+"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\Default.rc2.res"
+/OUT:"C:\Users\2308083\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveEditor\UnrealEditor-RiveEditor.lib"

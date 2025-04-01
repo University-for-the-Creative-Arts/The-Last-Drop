@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveshaders\\module.riveshaders.cpp",
+        "Source": "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveshaders\\module.riveshaders.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\2318999\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
+        "PCH": "c:\\users\\2308083\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdropeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderoldest.h.pch",
         "Includes": [
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveshaders\\definitions.riveshaders.h",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\private\\riveshadersmodule.cpp",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\public\\riveshadersmodule.h",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\riveshaders\\definitions.riveshaders.h",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\private\\riveshadersmodule.cpp",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\public\\riveshadersmodule.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\interfaces\\ipluginmanager.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\plugindescriptor.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\custombuildsteps.h",
@@ -16,12 +16,12 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\plugindisalloweddescriptor.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\pluginreferencedescriptor.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\projects\\public\\versescope.h",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\private\\riveshadertypes.cpp",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\public\\riveshadertypes.h",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\private\\riveshadertypes.cpp",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\riveshaders\\public\\riveshadertypes.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rendercore\\public\\shaderparameterstruct.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\rhi\\public\\datadrivenshaderplatforminfo.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\shaders\\shared\\hlsltypealiases.h",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\thirdparty\\rivelibrary\\includes\\rive\\generated\\shaders\\rhi.exports.h",
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\thirdparty\\rivelibrary\\includes\\rive\\generated\\shaders\\rhi.exports.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\core\\public\\misc\\engineversioncomparison.h",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\filesystem",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\chrono",
@@ -77,7 +77,7 @@
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocmes",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\xlocmon",
             "c:\\program files\\microsoft visual studio\\2022\\community\\vc\\tools\\msvc\\14.38.33130\\include\\iomanip",
-            "c:\\users\\2318999\\documents\\github\\the-last-drop\\plugins\\rive\\source\\thirdparty\\rivelibrary\\includes\\rive\\generated\\shaders\\rhi.glsl.hpp"
+            "c:\\users\\2308083\\documents\\github\\the-last-drop\\plugins\\rive\\source\\thirdparty\\rivelibrary\\includes\\rive\\generated\\shaders\\rhi.glsl.hpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
