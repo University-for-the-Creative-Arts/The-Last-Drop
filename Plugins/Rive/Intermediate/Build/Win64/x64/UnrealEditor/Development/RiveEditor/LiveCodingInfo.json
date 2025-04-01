@@ -1,0 +1,28 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.RiveEditor.cpp.obj": [
+			"AssetDefinition_RiveFile.cpp.obj",
+			"RiveActorFactory.cpp.obj",
+			"RiveFileFactory.cpp.obj",
+			"RiveTextureObjectFactory.cpp.obj",
+			"RiveWidgetFactory.cpp.obj",
+			"RiveEditorLog.cpp.obj",
+			"RiveEditorModule.cpp.obj",
+			"RiveFileAssetTypeActions.cpp.obj",
+			"RiveFileDetailCustomization.cpp.obj",
+			"RiveFileEditor.cpp.obj",
+			"RiveFileThumbnailRenderer.cpp.obj",
+			"RiveTextureObjectAssetTypeActions.cpp.obj",
+			"RiveTextureObjectEditor.cpp.obj",
+			"RiveTextureObjectThumbnailRenderer.cpp.obj",
+			"RiveEditorStats.cpp.obj",
+			"AssetDefinition_RiveFile.gen.cpp.obj",
+			"RiveActorFactory.gen.cpp.obj",
+			"RiveEditor.init.gen.cpp.obj",
+			"RiveFileFactory.gen.cpp.obj",
+			"RiveFileThumbnailRenderer.gen.cpp.obj",
+			"RiveTextureObjectThumbnailRenderer.gen.cpp.obj"
+		]
+	}
+}
