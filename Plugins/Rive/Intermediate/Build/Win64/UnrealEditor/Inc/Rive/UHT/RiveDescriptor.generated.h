@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define RIVE_RiveDescriptor_generated_h
 
-#define FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveDescriptor_h_16_GENERATED_BODY \
+#define FID_Users_2302143_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveDescriptor_h_16_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRiveDescriptor_Statics; \
 	RIVE_API static class UScriptStruct* StaticStruct();
 
@@ -22,7 +22,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 template<> RIVE_API UScriptStruct* StaticStruct<struct FRiveDescriptor>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2308083_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveDescriptor_h
+#define CURRENT_FILE_ID FID_Users_2302143_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_Rive_Public_Rive_RiveDescriptor_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
