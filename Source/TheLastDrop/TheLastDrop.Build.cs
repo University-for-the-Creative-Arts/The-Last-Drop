@@ -8,7 +8,7 @@ public class TheLastDrop : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara" ,"PhysicsCore"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara" ,"PhysicsCore","Rive","RiveShaders","RiveStats","RiveEditor","RiveRenderer"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
