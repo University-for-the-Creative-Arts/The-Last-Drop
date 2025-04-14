@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-RiveRenderer.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\2306309\Documents\GitHub\The-Last-Drop\Intermediate\Build\Win64\x64\TheLastDropEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.InclOrderOldest.h.obj"
+"C:\Users\2306309\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveRenderer\Module.RiveRenderer.cpp.obj"
+"C:\Users\2306309\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveRenderer\Default.rc2.res"
+/OUT:"C:\Users\2306309\Documents\GitHub\The-Last-Drop\Plugins\Rive\Intermediate\Build\Win64\x64\UnrealEditor\Development\RiveRenderer\UnrealEditor-RiveRenderer.lib"
