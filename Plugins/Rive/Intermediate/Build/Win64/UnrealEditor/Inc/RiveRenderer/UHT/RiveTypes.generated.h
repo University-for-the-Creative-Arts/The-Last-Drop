@@ -14,14 +14,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define RIVERENDERER_RiveTypes_generated_h
 
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h_11_GENERATED_BODY \
+#define FID_Users_2306309_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h_11_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRiveStateMachineEvent_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
 template<> RIVERENDERER_API UScriptStruct* StaticStruct<struct FRiveStateMachineEvent>();
 
-#define FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h_47_GENERATED_BODY \
+#define FID_Users_2306309_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h_47_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FRiveAlignment_Statics; \
 	static class UScriptStruct* StaticStruct();
 
@@ -29,7 +29,7 @@ template<> RIVERENDERER_API UScriptStruct* StaticStruct<struct FRiveStateMachine
 template<> RIVERENDERER_API UScriptStruct* StaticStruct<struct FRiveAlignment>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2318999_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h
+#define CURRENT_FILE_ID FID_Users_2306309_Documents_GitHub_The_Last_Drop_Plugins_Rive_Source_RiveRenderer_Public_RiveTypes_h
 
 
 #define FOREACH_ENUM_ERIVEFITTYPE(op) \
