@@ -24,6 +24,10 @@
 		{
 			"Name": "MovieRenderPipeline",
 			"Enabled": true
+		},
+		{
+			"Name": "Rive",
+			"Enabled": true
 		}
 	]
 }

@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\2303759\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\unrealgame\\inc\\riverenderer\\uht\\riverenderer.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\2303759\\documents\\github\\the-last-drop\\intermediate\\build\\win64\\x64\\thelastdrop\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\2303759\\documents\\github\\the-last-drop\\plugins\\rive\\intermediate\\build\\win64\\x64\\unrealgame\\development\\riverenderer\\definitions.riverenderer.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
