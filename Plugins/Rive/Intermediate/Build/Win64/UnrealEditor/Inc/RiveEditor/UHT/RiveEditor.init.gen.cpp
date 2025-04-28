@@ -17,7 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeRiveEditor_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0x48B24AB2,
+				0x7D52F5CD,
 				0x12B7B40B,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -25,5 +25,5 @@ void EmptyLinkFunctionForGeneratedCodeRiveEditor_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_RiveEditor.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_RiveEditor(Z_Construct_UPackage__Script_RiveEditor, TEXT("/Script/RiveEditor"), Z_Registration_Info_UPackage__Script_RiveEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x48B24AB2, 0x12B7B40B));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_RiveEditor(Z_Construct_UPackage__Script_RiveEditor, TEXT("/Script/RiveEditor"), Z_Registration_Info_UPackage__Script_RiveEditor, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x7D52F5CD, 0x12B7B40B));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

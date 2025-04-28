@@ -7,17 +7,22 @@ public class TheLastDrop : ModuleRules
 	public TheLastDrop(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara" ,"PhysicsCore","Rive","RiveShaders","RiveStats","RiveEditor","RiveRenderer"});
+    
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "Niagara", "PhysicsCore", "Rive", "RiveShaders", "RiveStats", "RiveRenderer" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		if (Target.bBuildEditor)
+		{
+			// Only add editor modules when building for the editor
+			//PublicDependencyModuleNames.Add("RiveEditor");
+		}
+
+		PrivateDependencyModuleNames.AddRange(new string[] { });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+        
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 	}
 }
+
